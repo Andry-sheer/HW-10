@@ -1527,7 +1527,7 @@ color: #000000;
 
 .list li:hover .first-menu {
   display: block;
-  z-index: 9;
+  z-index: 4;
 }
 
 .list .first-menu {
@@ -1541,7 +1541,7 @@ color: #000000;
 
 .list li:hover .second-menu {
   display: block;
-  z-index: 9;
+  z-index: 5;
 }
 
 .list li a {
@@ -1611,6 +1611,13 @@ color: #000000;
 
 .second-menu li:hover ul.third-menu {
   display: block;
+}
+
+.img-homeworks {
+  background:url(/images/icons/home-1.svg) no-repeat center/40px;
+  display: inline-block;
+  z-index: 10;
+  font-size: 10px;
 }
 /************************* main-block ******************************/
 
