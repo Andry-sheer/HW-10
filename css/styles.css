@@ -1558,6 +1558,62 @@ color: #000000;
   font-family: 'Tektur';
 }
 
+.list li a.home-1 {
+  background: #81a36b url(/images/icons/home-1.svg) no-repeat 1%/cover;
+  background-size: 40px;
+  padding: 15px 10px 15px 45px;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.list li a.home-1:hover {
+  background: purple url(/images/icons/home-1.svg) no-repeat 1%/cover;
+  background-size: 40px;
+  box-shadow: 0 1px 12px #ffffff;
+}
+
+.list li a.img-homeworks {
+  background: #81a36b url(/images/icons/down-arrow.svg) no-repeat 100%/cover;
+  background-size: 40px;
+  padding: 15px 40px 15px 10px;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.list li a.img-homeworks:hover {
+  background: purple url(/images/icons/down-arrow.svg) no-repeat 100%/cover;
+  background-size: 40px;
+  box-shadow: 0 1px 12px #ffffff;
+}
+
+.list li a.img-things {
+  background: #81a36b url(/images/icons/down-arrow.svg) no-repeat 100%/cover;
+  background-size: 40px;
+  padding: 15px 50px 15px 20px;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.list li a.img-things:hover {
+  background: purple url(/images/icons/down-arrow.svg) no-repeat 100%/cover;
+  background-size: 40px;
+  box-shadow: 0 1px 12px #ffffff;
+}
+
+.list li a.img-maq {
+  background: #81a36b url(/images/icons/right-arrow.svg) no-repeat 100%/cover;
+  background-size: 40px;
+  padding: 15px 50px 15px 35px;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.list li a.img-maq:hover {
+  background: purple url(/images/icons/right-arrow.svg) no-repeat 100%/cover;
+  background-size: 40px;
+  box-shadow: 0 1px 12px #ffffff;
+}
+
 .list .second-menu {
   position: absolute;
   top: 100%;
@@ -1572,6 +1628,7 @@ color: #000000;
   border: 2px solid #000000;
   font-family: 'Roboto';
   font-weight: 400;
+  padding: 15px 30px;
 }
 
 .list .first-menu a {
@@ -1589,6 +1646,31 @@ color: #000000;
 .list li a:active {
   background: rgb(73, 69, 128);
   box-shadow: 0 1px 16px #ffffff;
+}
+
+
+.list li a.img-things:active {
+  background: rgb(73, 69, 128) url(/images/icons/down-arrow.svg) no-repeat 100%/cover;
+  box-shadow: 0 1px 16px #ffffff;
+  background-size: 40px;
+}
+
+.list li a.img-homeworks:active {
+  background: rgb(73, 69, 128) url(/images/icons/down-arrow.svg) no-repeat 100%/cover;
+  box-shadow: 0 1px 16px #ffffff;
+  background-size: 40px;
+}
+
+.list li a.home-1:active {
+  background: rgb(73, 69, 128) url(/images/icons/home-1.svg) no-repeat 1%/cover;
+  box-shadow: 0 1px 16px #ffffff;
+  background-size: 40px;
+}
+
+.list li a.img-maq:active {
+  background: rgb(73, 69, 128) url(/images/icons/right-arrow.svg) no-repeat 100%/cover;
+  box-shadow: 0 1px 16px #ffffff;
+  background-size: 40px;
 }
 
 .list ul.third-menu a {
@@ -1613,12 +1695,7 @@ color: #000000;
   display: block;
 }
 
-.img-homeworks {
-  background:url(/images/icons/home-1.svg) no-repeat center/40px;
-  display: inline-block;
-  z-index: 10;
-  font-size: 10px;
-}
+
 /************************* main-block ******************************/
 
 .Main-page {
@@ -1644,14 +1721,18 @@ color: #000000;
 }
 
 .title-main {
+  /* background: url(/images/hw93.jpg) no-repeat center/cover;
   text-transform: uppercase;
-  color: #000;
+  background-clip: text;
+  color: transparent; */
+
+  font-family: 'Fredericka the Great';
   text-align: center;
   padding-top: 25px;
   margin-bottom: 25px;
-  font-family: 'Fredericka the Great', serif;
   font-weight: 400;
-  font-size: 67px;
+  font-size: 80px;
+  color: #000000;
 }
 
 .main-block-1{
@@ -1663,44 +1744,87 @@ color: #000000;
   position: relative;
   height: 300px;
   width: 300px;
-  outline: 2px solid red;
 }
 
 
 .main-block-1 > .Block-A {
   position: relative;
-  height: 300px;
   width: 300px;
   outline: 2px solid rgb(0, 17, 255);
+  background: url(/images/oboi.jpg) no-repeat center/cover;
+  border-radius: 6%;
+}
+
+.block-title > .bak-B {
+  background: url(/images/oboi.jpg) no-repeat center/cover;
+  outline: 2px solid rgb(255, 255, 255);
+  width: 100%;
+  height: 196px;
+  border-radius: 6%;
+  margin-top: 5px;
+}
+
+.block-title > .bak-C {
+  background: url(/images/oboi.jpg) no-repeat center/cover;
+  border: 2px solid rgb(255, 255, 255);
+  padding: 0 5px;
+  width: 100%;
+  height: 198px;
+  border-radius: 6%;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.block-title > .bak-C > p {
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 700;
+  border: 0;
+  padding: 0;
+  text-align: center;
+  
 }
 
 .block-title {
   position: absolute;
-  background: #81a36b;
   height: 50px;
   width: 100%;
   border: 2px solid #000000;
   border-radius: 10px;
+  background: #81a36b;
   z-index: 0;
-  
+  border-radius: 10px;
+}
+
+.block-title h2 {
+  font-size: 0;
 }
 
 .block-title h2 {
   text-align: center;
   display: block;
-  margin: 15px 0;
-  font-size: 20px;
   color: #000;
+  font-size: 18px;
+  padding: 15px 0;
 }
 
 .block-title p {
+  font-size: 0;
+}
+
+.block-title p {
+  display: block;
   text-align: center;
   padding: 10px 0;
   text-transform: uppercase;
   font-size: 20px;
-  border: 2px solid #000000;
+  border: 2px solid #ffffff;
   border-radius: 10px;
   font-weight: 400;
+  color: #ffffff;
+  font-weight: 700;
+  margin-top: 5px;
 }
 
 
@@ -1753,7 +1877,6 @@ color: #000000;
 .img-tele {
   background: url(/images/icons/telegram.svg) center/cover;
 }
-
 
 /***********************************************************************/
 /***********************************************************************/
@@ -1947,6 +2070,11 @@ color: #000000;
 .yellow img {
   border-radius: 20%;
 }
+
+
+
+
+
 
 .blue {
   background: rgb(49, 49, 119) url('/images/hw91.jpg') no-repeat center/cover; /* позишин/размер.
